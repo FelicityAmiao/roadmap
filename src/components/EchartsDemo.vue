@@ -3,26 +3,16 @@
 </template>
 
 <script setup>
-import { use } from 'echarts/core';
-import { SVGRenderer } from 'echarts/renderers';
-import { PieChart } from 'echarts/charts';
-import {
-  TitleComponent,
-  TooltipComponent,
-  LegendComponent,
-} from 'echarts/components';
-import VChart, { THEME_KEY } from 'vue-echarts';
-import { ref, provide } from 'vue';
+import { use } from 'echarts/core'
+import { SVGRenderer } from 'echarts/renderers'
+import { PieChart } from 'echarts/charts'
+import { TitleComponent, TooltipComponent, LegendComponent } from 'echarts/components'
+import VChart, { THEME_KEY } from 'vue-echarts'
+import { ref, provide } from 'vue'
 
-use([
-  SVGRenderer,
-  PieChart,
-  TitleComponent,
-  TooltipComponent,
-  LegendComponent,
-]);
+use([SVGRenderer, PieChart, TitleComponent, TooltipComponent, LegendComponent])
 
-provide(THEME_KEY, 'dark');
+provide(THEME_KEY, 'dark')
 
 const option = ref({
   title: {
@@ -60,7 +50,7 @@ const option = ref({
       },
     },
   ],
-});
+})
 </script>
 
 <style scoped>
