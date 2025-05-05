@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import EchartsDemo from '../components/EchartsDemo.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <EchartsDemo />
   </main>
 </template>
