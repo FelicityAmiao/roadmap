@@ -5,10 +5,11 @@
 <script setup>
 import VChart from 'vue-echarts'
 import { ref } from 'vue'
+
 import { use } from 'echarts/core'
-import { SVGRenderer } from 'echarts/renderers'
 import { LineChart } from 'echarts/charts'
 import { GridComponent } from 'echarts/components'
+import { SVGRenderer } from 'echarts/renderers'
 
 use([GridComponent, LineChart, SVGRenderer])
 
