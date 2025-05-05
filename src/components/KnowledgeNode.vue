@@ -37,65 +37,42 @@ const option = ref({
       },
       data: [
         {
-          name: 'Node 1',
+          name: '',
+          x: 300,
+          y: 100,
+        },
+        {
+          name: 'Front-end',
           x: 300,
           y: 300,
         },
         {
-          name: 'Node 2',
-          x: 800,
-          y: 300,
-        },
-        {
-          name: 'Node 3',
-          x: 550,
-          y: 100,
-        },
-        {
-          name: 'Node 4',
-          x: 550,
+          name: 'Internet',
+          x: 300,
           y: 500,
         },
       ],
-      // links: [],
       links: [
         {
-          source: 0,
-          target: 1,
-          symbolSize: [5, 20],
+          source: '',
+          target: 'Front-end',
           label: {
-            show: true,
+            show: false,
           },
           lineStyle: {
-            width: 5,
-            curveness: 0.2,
+            type: 'dashed',
+            curveness: 0,
           },
         },
         {
-          source: 'Node 2',
-          target: 'Node 1',
+          source: 'Front-end',
+          target: 'Internet',
           label: {
-            show: true,
+            show: false,
           },
           lineStyle: {
-            curveness: 0.2,
+            curveness: 0,
           },
-        },
-        {
-          source: 'Node 1',
-          target: 'Node 3',
-        },
-        {
-          source: 'Node 2',
-          target: 'Node 3',
-        },
-        {
-          source: 'Node 2',
-          target: 'Node 4',
-        },
-        {
-          source: 'Node 1',
-          target: 'Node 4',
         },
       ],
       lineStyle: {
