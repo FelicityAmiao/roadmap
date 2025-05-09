@@ -35,11 +35,13 @@ const option = ref({
       edgeLabel: {
         fontSize: 20,
       },
+      symbol: 'roundRect',
       data: [
         {
           name: '',
           x: 300,
           y: 100,
+          symbol: 'none',
         },
         {
           name: 'Front-end',
