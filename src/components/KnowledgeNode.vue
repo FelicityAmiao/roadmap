@@ -25,7 +25,6 @@ const option = ref({
     {
       type: 'graph',
       layout: 'none',
-      symbolSize: 50,
       roam: true,
       label: {
         show: true,
@@ -35,8 +34,15 @@ const option = ref({
       edgeLabel: {
         fontSize: 20,
       },
-      symbol: 'roundRect',
+      symbol: 'rect',
       symbolSize: [130, 40],
+      itemStyle: {
+        color: '#fdff00',
+        borderColor: 'black',
+        borderWidth: 4,
+        borderType: 'solid',
+        shadowBlur: 0
+      },
       data: [
         {
           name: '',
