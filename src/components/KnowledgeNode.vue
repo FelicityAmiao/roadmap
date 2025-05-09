@@ -28,6 +28,9 @@ const option = ref({
       roam: true,
       label: {
         show: true,
+        fontWeight: 'bold',
+        fontSize: 17,
+        fontFamily: 'Microsoft YaHei'
       },
       edgeSymbol: ['circle', 'arrow'],
       edgeSymbolSize: [4, 10],
