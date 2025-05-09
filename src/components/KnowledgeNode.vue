@@ -36,6 +36,7 @@ const option = ref({
         fontSize: 20,
       },
       symbol: 'roundRect',
+      symbolSize: [130, 40],
       data: [
         {
           name: '',
